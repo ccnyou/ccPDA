@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>DB21C8E7-56B5-4BA0-AFCB-F63C446D35EB</string>
+	<key>IDESourceControlProjectName</key>
+	<string>ccPDA</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>91E8739B-3CB2-4400-AE4B-28FA6A65AE4D</key>
+		<string>https://github.com/ccnyou/ccPDA.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ccPDA/ccPDA.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>91E8739B-3CB2-4400-AE4B-28FA6A65AE4D</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/ccnyou/ccPDA.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>91E8739B-3CB2-4400-AE4B-28FA6A65AE4D</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>91E8739B-3CB2-4400-AE4B-28FA6A65AE4D</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ccPDA</string>
+		</dict>
+	</array>
+</dict>
+</plist>
