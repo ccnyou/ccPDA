@@ -10,4 +10,8 @@
 
 @interface ViewController : UIViewController
 
+@property (nonatomic, strong) IBOutlet UITextView* textView;
+
+- (IBAction)run:(id)sender;
+
 @end
