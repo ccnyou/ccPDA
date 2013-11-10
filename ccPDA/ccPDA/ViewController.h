@@ -7,11 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "IphoneContact.h"
 @interface ViewController : UIViewController
 
 @property (nonatomic, strong) IBOutlet UITextView* textView;
+@property (nonatomic, strong) IBOutlet UIButton* button;
+@property (nonatomic, strong) IBOutlet UIButton* clearButton;
+@property (nonatomic, strong) IBOutlet UIButton* openButton;
+
 
 - (IBAction)run:(id)sender;
-
+- (IBAction)onOpen:(id)sender;
+- (IBAction)onClear:(id)sender;
 @end
