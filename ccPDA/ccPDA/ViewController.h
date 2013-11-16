@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "CCSegmentedControl.h"
+#import "Unity.h"
 
 @interface ViewController : UIViewController
 

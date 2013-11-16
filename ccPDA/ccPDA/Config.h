@@ -9,6 +9,6 @@
 #ifndef ccPDA_Config_h
 #define ccPDA_Config_h
 
-#define LOG_TO_FILE 1
+#define LOG_TO_FILE 0
 
 #endif
