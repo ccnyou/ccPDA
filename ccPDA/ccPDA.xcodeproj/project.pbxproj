@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B22D6A3E183710490047FF58 /* Images-2.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B22D6A3D183710490047FF58 /* Images-2.xcassets */; };
+		B22D6A42183711940047FF58 /* Icon_120x120.png in Resources */ = {isa = PBXBuildFile; fileRef = B22D6A3F183711940047FF58 /* Icon_120x120.png */; };
+		B22D6A43183711940047FF58 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B22D6A40183711940047FF58 /* Icon.png */; };
+		B22D6A44183711940047FF58 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B22D6A41183711940047FF58 /* Icon@2x.png */; };
 		B2F58B57182A6F1000CD8F7A /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F58B4E182A6F1000CD8F7A /* FMDatabase.m */; };
 		B2F58B58182A6F1000CD8F7A /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F58B50182A6F1000CD8F7A /* FMDatabaseAdditions.m */; };
 		B2F58B59182A6F1000CD8F7A /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F58B52182A6F1000CD8F7A /* FMDatabasePool.m */; };
@@ -51,6 +55,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B22D6A3D183710490047FF58 /* Images-2.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Images-2.xcassets"; sourceTree = "<group>"; };
+		B22D6A3F183711940047FF58 /* Icon_120x120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon_120x120.png; path = ccPDA/Icon_120x120.png; sourceTree = "<group>"; };
+		B22D6A40183711940047FF58 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = ccPDA/Icon.png; sourceTree = "<group>"; };
+		B22D6A41183711940047FF58 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "ccPDA/Icon@2x.png"; sourceTree = "<group>"; };
 		B2F58B4D182A6F1000CD8F7A /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
 		B2F58B4E182A6F1000CD8F7A /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
 		B2F58B4F182A6F1000CD8F7A /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
@@ -129,6 +137,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B22D6A3918370F210047FF58 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				B22D6A3F183711940047FF58 /* Icon_120x120.png */,
+				B22D6A40183711940047FF58 /* Icon.png */,
+				B22D6A41183711940047FF58 /* Icon@2x.png */,
+			);
+			name = Images;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		B22D6A3A18370F3F0047FF58 /* 第三方模块 */ = {
+			isa = PBXGroup;
+			children = (
+				B2F58B65182A9E8E00CD8F7A /* ZipArchive */,
+				B2F58B4C182A6F1000CD8F7A /* FMDB */,
+			);
+			name = "第三方模块";
+			path = ..;
+			sourceTree = "<group>";
+		};
+		B22D6A3B18370F790047FF58 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				B2FD9BC4182D06A5003EAD08 /* AppDelegate.h */,
+				B2FD9BC5182D06A5003EAD08 /* AppDelegate.m */,
+				B2FD9BCD182D06A5003EAD08 /* ViewController.h */,
+				B2FD9BCE182D06A5003EAD08 /* ViewController.m */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		B22D6A3C18370FA30047FF58 /* Resource Files */ = {
+			isa = PBXGroup;
+			children = (
+				B2FD9BC7182D06A5003EAD08 /* Main_iPhone.storyboard */,
+				B2FD9BCA182D06A5003EAD08 /* Main_iPad.storyboard */,
+				B22D6A3918370F210047FF58 /* Images */,
+			);
+			name = "Resource Files";
+			sourceTree = "<group>";
+		};
 		B2F58B4C182A6F1000CD8F7A /* FMDB */ = {
 			isa = PBXGroup;
 			children = (
@@ -176,8 +226,6 @@
 		B2FD9BA9182D06A5003EAD08 = {
 			isa = PBXGroup;
 			children = (
-				B2F58B65182A9E8E00CD8F7A /* ZipArchive */,
-				B2F58B4C182A6F1000CD8F7A /* FMDB */,
 				B2FD9BBB182D06A5003EAD08 /* ccPDA */,
 				B2FD9BDD182D06A5003EAD08 /* ccPDATests */,
 				B2FD9BB4182D06A5003EAD08 /* Frameworks */,
@@ -212,16 +260,14 @@
 		B2FD9BBB182D06A5003EAD08 /* ccPDA */ = {
 			isa = PBXGroup;
 			children = (
-				B2FD9BC4182D06A5003EAD08 /* AppDelegate.h */,
-				B2FD9BC5182D06A5003EAD08 /* AppDelegate.m */,
-				B2FD9BC7182D06A5003EAD08 /* Main_iPhone.storyboard */,
-				B2FD9BCA182D06A5003EAD08 /* Main_iPad.storyboard */,
-				B2FD9BCD182D06A5003EAD08 /* ViewController.h */,
-				B2FD9BCE182D06A5003EAD08 /* ViewController.m */,
+				B22D6A3C18370FA30047FF58 /* Resource Files */,
+				B22D6A3B18370F790047FF58 /* Source Files */,
+				B22D6A3A18370F3F0047FF58 /* 第三方模块 */,
 				B2FD9BD0182D06A5003EAD08 /* Images.xcassets */,
 				B2FD9BBC182D06A5003EAD08 /* Supporting Files */,
 				B2F58B62182A737700CD8F7A /* IphoneContact.h */,
 				B2F58B63182A737700CD8F7A /* IphoneContact.m */,
+				B22D6A3D183710490047FF58 /* Images-2.xcassets */,
 			);
 			path = ccPDA;
 			sourceTree = "<group>";
@@ -331,10 +377,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B22D6A3E183710490047FF58 /* Images-2.xcassets in Resources */,
+				B22D6A44183711940047FF58 /* Icon@2x.png in Resources */,
 				B2F58B73182A9E8E00CD8F7A /* ChangeLogUnzip in Resources */,
 				B2FD9BCC182D06A5003EAD08 /* Main_iPad.storyboard in Resources */,
 				B2FD9BD1182D06A5003EAD08 /* Images.xcassets in Resources */,
+				B22D6A43183711940047FF58 /* Icon.png in Resources */,
 				B2FD9BC9182D06A5003EAD08 /* Main_iPhone.storyboard in Resources */,
+				B22D6A42183711940047FF58 /* Icon_120x120.png in Resources */,
 				B2FD9BC0182D06A5003EAD08 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -502,7 +552,6 @@
 		B2FD9BE8182D06A5003EAD08 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ccPDA/ccPDA-Prefix.pch";
@@ -515,7 +564,6 @@
 		B2FD9BE9182D06A5003EAD08 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ccPDA/ccPDA-Prefix.pch";
