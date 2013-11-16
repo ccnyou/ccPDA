@@ -11,6 +11,6 @@
 @interface DebugViewController : UIViewController
 
 - (void)log:(id)obj;
-- (void)clean;
+- (IBAction)clean;
 
 @end
