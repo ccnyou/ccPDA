@@ -78,7 +78,6 @@
     @"CREATE TABLE IF NOT EXISTS Groups("
     "id INTEGER PRIMARY KEY AUTOINCREMENT,"
     "name text,"
-    "label text,"
     "parent_id text"
     ");";
     if (![_dbConn executeUpdate:sql]) {
@@ -173,6 +172,20 @@
     
     //将通讯录中的信息用数组方式读出
     CFArrayRef contacts = ABAddressBookCopyArrayOfAllPeople(addressBook);
+    long count = ABAddressBookGetGroupCount(addressBook);
+    CFArrayRef groups = ABAddressBookCopyArrayOfAllGroups(addressBook);
+    for (int i = 0; i < count; i++) {
+        ABRecordRef group = CFArrayGetValueAtIndex(groups, i);
+        NSString* groupName = (__bridge NSString *)ABRecordCopyCompositeName(group);
+        
+        NSLog(@"%s line:%d group = %@", __FUNCTION__, __LINE__, groupName);
+        NSString* sql = [[NSString alloc] initWithFormat:@"insert or replace into Groups values(null, '%@', 0)", groupName];
+        BOOL retCode = [self.dbConn executeUpdate:sql];
+        if (retCode == NO) {
+            NSLog(@"%s line:%d error, msg = %@", __FUNCTION__, __LINE__, [self.dbConn lastError]);
+        }
+    }
+    
     //获取通讯录中联系人
     CFIndex nPeople = ABAddressBookGetPersonCount(addressBook);
     NSLog(@"%s line:%d nPeople = %ld", __FUNCTION__, __LINE__, nPeople);
@@ -210,21 +223,12 @@
         if (retCode == NO) {
             NSLog(@"%s line:%d error, msg = %@", __FUNCTION__, __LINE__, [self.dbConn lastError]);
         }
-        
-        long count = ABAddressBookGetGroupCount(addressBook);
-        CFArrayRef groups = ABAddressBookCopyArrayOfAllGroups(addressBook);
-        for (int i = 0; i < count; i++) {
-            ABRecordRef group = CFArrayGetValueAtIndex(groups, i);
-            NSString* groupName = (__bridge NSString *)ABRecordCopyCompositeName(group);
-
-            NSLog(@"%s line:%d group = %@", __FUNCTION__, __LINE__, groupName);
-        }
-        
         long long persionId = [self.dbConn lastInsertRowId];
+ 
+        
         //读取电话信息，和emial类似，也分为工作电话，家庭电话，工作传真，家庭传真。。。。
         
         ABMultiValueRef phone = ABRecordCopyValue(person, kABPersonPhoneProperty);
-        
         count = ABMultiValueGetCount(phone);
         if ((phone != nil) && count > 0) {
             
