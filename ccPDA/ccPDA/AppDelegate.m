@@ -7,12 +7,24 @@
 //
 
 #import "AppDelegate.h"
+#import "Config.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+#if LOG_TO_FILE
+    NSFileManager* fileManager = [NSFileManager defaultManager];
+    NSArray* urls = [fileManager URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask];
+    NSURL* appUrl = [urls lastObject];
+    
+    NSString* logPath = [[appUrl path] stringByAppendingPathComponent:@"outlog.txt"];
+    NSString* errPath = [[appUrl path] stringByAppendingPathComponent:@"errlog.txt"];
+    freopen([logPath UTF8String], "wb", stdout);
+    freopen([errPath UTF8String], "wb", stderr);
+#endif
+    
     return YES;
 }
 							

@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "IphoneContact.h"
+#import "CCSegmentedControl.h"
+
 @interface ViewController : UIViewController
 
 @property (nonatomic, strong) IBOutlet UITextView* textView;
@@ -15,8 +16,7 @@
 @property (nonatomic, strong) IBOutlet UIButton* clearButton;
 @property (nonatomic, strong) IBOutlet UIButton* openButton;
 
-
-- (IBAction)run:(id)sender;
-- (IBAction)onOpen:(id)sender;
-- (IBAction)onClear:(id)sender;
+//- (IBAction)run:(id)sender;
+//- (IBAction)onOpen:(id)sender;
+//- (IBAction)onClear:(id)sender;
 @end
