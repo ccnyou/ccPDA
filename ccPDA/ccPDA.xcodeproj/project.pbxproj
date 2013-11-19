@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B22D6A3E183710490047FF58 /* Images-2.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B22D6A3D183710490047FF58 /* Images-2.xcassets */; };
 		B22D6A42183711940047FF58 /* Icon_120x120.png in Resources */ = {isa = PBXBuildFile; fileRef = B22D6A3F183711940047FF58 /* Icon_120x120.png */; };
 		B22D6A43183711940047FF58 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B22D6A40183711940047FF58 /* Icon.png */; };
 		B22D6A44183711940047FF58 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B22D6A41183711940047FF58 /* Icon@2x.png */; };
 		B22D6A47183713310047FF58 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B22D6A46183713310047FF58 /* TodayViewController.m */; };
 		B22D6A50183715A90047FF58 /* CCSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = B22D6A4D183715A90047FF58 /* CCSegmentedControl.m */; };
+		B2593E9A183BA46600E312E0 /* MRZoomScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2593E99183BA46600E312E0 /* MRZoomScrollView.m */; };
 		B2964C1F1837176C006FAEC4 /* DebugViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2964C1E1837176C006FAEC4 /* DebugViewController.m */; };
 		B2964C22183718B8006FAEC4 /* Unity.m in Sources */ = {isa = PBXBuildFile; fileRef = B2964C21183718B8006FAEC4 /* Unity.m */; };
 		B2964C25183719AD006FAEC4 /* 分段控件背景.png in Resources */ = {isa = PBXBuildFile; fileRef = B2964C23183719AD006FAEC4 /* 分段控件背景.png */; };
@@ -66,7 +66,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B22D6A3D183710490047FF58 /* Images-2.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Images-2.xcassets"; sourceTree = "<group>"; };
 		B22D6A3F183711940047FF58 /* Icon_120x120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon_120x120.png; path = ccPDA/Icon_120x120.png; sourceTree = "<group>"; };
 		B22D6A40183711940047FF58 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = ccPDA/Icon.png; sourceTree = "<group>"; };
 		B22D6A41183711940047FF58 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "ccPDA/Icon@2x.png"; sourceTree = "<group>"; };
@@ -75,6 +74,8 @@
 		B22D6A48183714030047FF58 /* Config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
 		B22D6A4C183715A90047FF58 /* CCSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCSegmentedControl.h; sourceTree = "<group>"; };
 		B22D6A4D183715A90047FF58 /* CCSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCSegmentedControl.m; sourceTree = "<group>"; };
+		B2593E98183BA46600E312E0 /* MRZoomScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRZoomScrollView.h; sourceTree = "<group>"; };
+		B2593E99183BA46600E312E0 /* MRZoomScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRZoomScrollView.m; sourceTree = "<group>"; };
 		B2964C1D1837176C006FAEC4 /* DebugViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DebugViewController.h; sourceTree = "<group>"; };
 		B2964C1E1837176C006FAEC4 /* DebugViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DebugViewController.m; sourceTree = "<group>"; };
 		B2964C20183718B8006FAEC4 /* Unity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Unity.h; sourceTree = "<group>"; };
@@ -183,6 +184,7 @@
 		B22D6A3A18370F3F0047FF58 /* 第三方模块 */ = {
 			isa = PBXGroup;
 			children = (
+				B2593E97183BA46600E312E0 /* MRZoomScrollView */,
 				B2964C2B18373006006FAEC4 /* LunarCalendar */,
 				B22D6A49183715A90047FF58 /* CCSegmentedControl */,
 				B2F58B65182A9E8E00CD8F7A /* ZipArchive */,
@@ -230,6 +232,15 @@
 			);
 			name = CCSegmentedControl;
 			path = ../../CCSegmentedControl;
+			sourceTree = "<group>";
+		};
+		B2593E97183BA46600E312E0 /* MRZoomScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				B2593E98183BA46600E312E0 /* MRZoomScrollView.h */,
+				B2593E99183BA46600E312E0 /* MRZoomScrollView.m */,
+			);
+			path = MRZoomScrollView;
 			sourceTree = "<group>";
 		};
 		B2964C2B18373006006FAEC4 /* LunarCalendar */ = {
@@ -331,7 +342,6 @@
 				B2FD9BBC182D06A5003EAD08 /* Supporting Files */,
 				B2F58B62182A737700CD8F7A /* IphoneContact.h */,
 				B2F58B63182A737700CD8F7A /* IphoneContact.m */,
-				B22D6A3D183710490047FF58 /* Images-2.xcassets */,
 			);
 			path = ccPDA;
 			sourceTree = "<group>";
@@ -441,7 +451,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B22D6A3E183710490047FF58 /* Images-2.xcassets in Resources */,
 				B22D6A44183711940047FF58 /* Icon@2x.png in Resources */,
 				B2F58B73182A9E8E00CD8F7A /* ChangeLogUnzip in Resources */,
 				B2FD9BCC182D06A5003EAD08 /* Main_iPad.storyboard in Resources */,
@@ -479,6 +488,7 @@
 				B2F58B78182A9E8E00CD8F7A /* ZipArchive.mm in Sources */,
 				B2FD9BC6182D06A5003EAD08 /* AppDelegate.m in Sources */,
 				B2F58B64182A737700CD8F7A /* IphoneContact.m in Sources */,
+				B2593E9A183BA46600E312E0 /* MRZoomScrollView.m in Sources */,
 				B2F58B74182A9E8E00CD8F7A /* ioapi.c in Sources */,
 				B2F58B75182A9E8E00CD8F7A /* mztools.c in Sources */,
 				B2F58B76182A9E8E00CD8F7A /* unzip.c in Sources */,

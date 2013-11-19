@@ -8,12 +8,15 @@
 
 #import "TodayViewController.h"
 #import "LunarCalendar.h"
+#import "MRZoomScrollView.h"
 @interface TodayViewController ()
 
+@property (nonatomic, strong) IBOutlet MRZoomScrollView* zoomScrollView;
 @property (nonatomic, strong) IBOutlet UILabel* nowLabel;
 @property (nonatomic, strong) IBOutlet UILabel* lunarLabel;
 @property (nonatomic, strong) NSDateFormatter* dateFormatter;
 @property (nonatomic, strong) NSTimer* timer;
+
 @end
 
 @implementation TodayViewController
@@ -44,6 +47,8 @@
     self.lunarLabel.textAlignment = NSTextAlignmentCenter;
     self.nowLabel.textAlignment = NSTextAlignmentCenter;
     
+    _zoomScrollView.backgroundColor = [UIColor clearColor];
+    _zoomScrollView.imageView.image = [UIImage imageNamed:@"default_icon.png"];
 }
 
 - (void)viewDidAppear:(BOOL)animated
