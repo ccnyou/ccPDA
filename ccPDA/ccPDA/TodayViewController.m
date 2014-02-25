@@ -11,6 +11,7 @@
 #import "MRZoomScrollView.h"
 @interface TodayViewController ()
 
+@property (nonatomic, strong) IBOutlet UIScrollView* scrollView;
 @property (nonatomic, strong) IBOutlet MRZoomScrollView* zoomScrollView;
 @property (nonatomic, strong) IBOutlet UILabel* nowLabel;
 @property (nonatomic, strong) IBOutlet UILabel* lunarLabel;
@@ -47,15 +48,26 @@
     self.lunarLabel.textAlignment = NSTextAlignmentCenter;
     self.nowLabel.textAlignment = NSTextAlignmentCenter;
     
+    _scrollView.showsHorizontalScrollIndicator = NO;
+    _scrollView.showsVerticalScrollIndicator = NO;
+    _scrollView.layer.borderColor = [UIColor grayColor].CGColor;
+    _scrollView.layer.borderWidth = 1.0f;
+    _scrollView.layer.cornerRadius = 5.0;
+    
+    _zoomScrollView = [[MRZoomScrollView alloc] initWithFrame:CGRectMake(0, 0, self.scrollView.frame.size.width, self.scrollView.frame.size.height)];
     _zoomScrollView.backgroundColor = [UIColor clearColor];
-    _zoomScrollView.imageView.image = [UIImage imageNamed:@"default_icon.png"];
+    _zoomScrollView.imageView.contentMode = UIViewContentModeScaleAspectFit;
+    UIImage* image = [UIImage imageNamed:@"my_course_list.png"];
+    _zoomScrollView.imageView.image = image;
+    [self.scrollView addSubview:_zoomScrollView];
 }
 
 - (void)viewDidAppear:(BOOL)animated
 {
-    NSDate* date = [NSDate dateWithTimeIntervalSinceNow:0];
-    self.nowLabel.text = [_dateFormatter stringFromDate:date];
+    NSLog(@"%s line:%d %f", __FUNCTION__, __LINE__, self.view.frame.size.height);
     
+    NSDate* date = [NSDate date];
+    self.nowLabel.text = [_dateFormatter stringFromDate:date];
     
     LunarCalendar* lunarDate = [date chineseCalendarDate];
     NSString* lunarDateString = [NSString stringWithFormat:@"农历：%@%@", [lunarDate MonthLunar], [lunarDate DayLunar]];

@@ -5,11 +5,13 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>97919719-B4F1-48A3-9AA7-1069EDAF64BC</string>
+	<string>716DC2FE-3026-4A8F-A48A-25C2A2A3DF91</string>
 	<key>IDESourceControlProjectName</key>
 	<string>ccPDA</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
+		<key>0565C652-FAF1-4A3F-8086-552C119DBB67</key>
+		<string>https://github.com/ccnyou/CCSegmentedControl.git</string>
 		<key>91E8739B-3CB2-4400-AE4B-28FA6A65AE4D</key>
 		<string>https://github.com/ccnyou/ccPDA.git</string>
 	</dict>
@@ -17,6 +19,8 @@
 	<string>ccPDA/ccPDA.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
+		<key>0565C652-FAF1-4A3F-8086-552C119DBB67</key>
+		<string>../../../../CCSegmentedControl</string>
 		<key>91E8739B-3CB2-4400-AE4B-28FA6A65AE4D</key>
 		<string>../../..</string>
 	</dict>
@@ -35,6 +39,14 @@
 			<string>91E8739B-3CB2-4400-AE4B-28FA6A65AE4D</string>
 			<key>IDESourceControlWCCName</key>
 			<string>ccPDA</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>0565C652-FAF1-4A3F-8086-552C119DBB67</string>
+			<key>IDESourceControlWCCName</key>
+			<string>CCSegmentedControl</string>
 		</dict>
 	</array>
 </dict>

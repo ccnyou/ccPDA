@@ -13,6 +13,7 @@
 #import "Unity.h"
 #import "DebugViewController.h"
 #import "TodayViewController.h"
+#import "UserViewController.h"
 
 #if !LOG_TO_FILE
 #define NSLog(s, ...) [self log:[NSString stringWithFormat:(s), ##__VA_ARGS__]]
@@ -23,6 +24,7 @@
 
 @property (nonatomic, strong) TodayViewController* todayViewController;
 @property (nonatomic, strong) DebugViewController* debugViewController;
+@property (nonatomic, strong) UserViewController* userViewController;
 @property (nonatomic, strong) NSArray* viewControllers;
 @property (nonatomic,   weak) UIViewController* activeViewController;
 @property (nonatomic, strong) UIView* contentView;
@@ -48,7 +50,7 @@
 #pragma mark - Self Methods
 - (void)initControls
 {
-    CCSegmentedControl* segmentedControl = [[CCSegmentedControl alloc] initWithItems:@[@"今日关注", @"调试信息"]];
+    CCSegmentedControl* segmentedControl = [[CCSegmentedControl alloc] initWithItems:@[@"今日关注", @"个人信息", @"调试信息"]];
     segmentedControl.frame = CGRectMake(0, 0, 320, 50);
     segmentedControl.segmentTextColor = [Unity colorWithHexString:@"#535353"];
     segmentedControl.selectedSegmentTextColor = [UIColor whiteColor];
@@ -64,10 +66,12 @@
     UIStoryboard* storeBoard = [UIStoryboard storyboardWithName:@"TodayViewController" bundle:nil];
     _todayViewController = [storeBoard instantiateInitialViewController];
     
+    _userViewController = [[UserViewController alloc] initWithNibName:@"UserViewController" bundle:nil];
+    
     storeBoard = [UIStoryboard storyboardWithName:@"DebugViewController" bundle:nil];
     _debugViewController = [storeBoard instantiateInitialViewController];
 
-    _viewControllers = @[_todayViewController, _debugViewController];
+    _viewControllers = @[_todayViewController, _userViewController, _debugViewController];
     for (UIViewController* viewController in _viewControllers) {
         [self addChildViewController:viewController];
     }

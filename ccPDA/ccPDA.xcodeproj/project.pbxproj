@@ -12,12 +12,16 @@
 		B22D6A44183711940047FF58 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B22D6A41183711940047FF58 /* Icon@2x.png */; };
 		B22D6A47183713310047FF58 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B22D6A46183713310047FF58 /* TodayViewController.m */; };
 		B22D6A50183715A90047FF58 /* CCSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = B22D6A4D183715A90047FF58 /* CCSegmentedControl.m */; };
-		B2593E9A183BA46600E312E0 /* MRZoomScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2593E99183BA46600E312E0 /* MRZoomScrollView.m */; };
+		B2593E9C183BA67400E312E0 /* my_course_list.png in Resources */ = {isa = PBXBuildFile; fileRef = B2593E9B183BA67400E312E0 /* my_course_list.png */; };
+		B2593E9F183BA78300E312E0 /* MRZoomScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2593E9E183BA78300E312E0 /* MRZoomScrollView.m */; };
+		B2593EA1183BB00000E312E0 /* TodayViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2593EA0183BB00000E312E0 /* TodayViewController.storyboard */; };
+		B2593EA5183BB02C00E312E0 /* UserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2593EA3183BB02C00E312E0 /* UserViewController.m */; };
+		B2593EA6183BB02C00E312E0 /* UserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2593EA4183BB02C00E312E0 /* UserViewController.xib */; };
+		B2593EA8183BB32A00E312E0 /* micro_msg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B2593EA7183BB32A00E312E0 /* micro_msg.jpg */; };
 		B2964C1F1837176C006FAEC4 /* DebugViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2964C1E1837176C006FAEC4 /* DebugViewController.m */; };
 		B2964C22183718B8006FAEC4 /* Unity.m in Sources */ = {isa = PBXBuildFile; fileRef = B2964C21183718B8006FAEC4 /* Unity.m */; };
 		B2964C25183719AD006FAEC4 /* 分段控件背景.png in Resources */ = {isa = PBXBuildFile; fileRef = B2964C23183719AD006FAEC4 /* 分段控件背景.png */; };
 		B2964C26183719AD006FAEC4 /* 分段控件阴影.png in Resources */ = {isa = PBXBuildFile; fileRef = B2964C24183719AD006FAEC4 /* 分段控件阴影.png */; };
-		B2964C2818371D2C006FAEC4 /* TodayViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2964C2718371D2C006FAEC4 /* TodayViewController.storyboard */; };
 		B2964C2A183724A9006FAEC4 /* DebugViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2964C29183724A9006FAEC4 /* DebugViewController.storyboard */; };
 		B2964C2E18373006006FAEC4 /* LunarCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = B2964C2D18373006006FAEC4 /* LunarCalendar.m */; };
 		B2964C30183730A6006FAEC4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2964C2F183730A6006FAEC4 /* QuartzCore.framework */; };
@@ -74,15 +78,20 @@
 		B22D6A48183714030047FF58 /* Config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
 		B22D6A4C183715A90047FF58 /* CCSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCSegmentedControl.h; sourceTree = "<group>"; };
 		B22D6A4D183715A90047FF58 /* CCSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCSegmentedControl.m; sourceTree = "<group>"; };
-		B2593E98183BA46600E312E0 /* MRZoomScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRZoomScrollView.h; sourceTree = "<group>"; };
-		B2593E99183BA46600E312E0 /* MRZoomScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRZoomScrollView.m; sourceTree = "<group>"; };
+		B2593E9B183BA67400E312E0 /* my_course_list.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = my_course_list.png; path = Images/my_course_list.png; sourceTree = SOURCE_ROOT; };
+		B2593E9D183BA78300E312E0 /* MRZoomScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRZoomScrollView.h; sourceTree = "<group>"; };
+		B2593E9E183BA78300E312E0 /* MRZoomScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRZoomScrollView.m; sourceTree = "<group>"; };
+		B2593EA0183BB00000E312E0 /* TodayViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TodayViewController.storyboard; sourceTree = "<group>"; };
+		B2593EA2183BB02C00E312E0 /* UserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserViewController.h; sourceTree = "<group>"; };
+		B2593EA3183BB02C00E312E0 /* UserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserViewController.m; sourceTree = "<group>"; };
+		B2593EA4183BB02C00E312E0 /* UserViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserViewController.xib; sourceTree = "<group>"; };
+		B2593EA7183BB32A00E312E0 /* micro_msg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = micro_msg.jpg; path = Images/micro_msg.jpg; sourceTree = "<group>"; };
 		B2964C1D1837176C006FAEC4 /* DebugViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DebugViewController.h; sourceTree = "<group>"; };
 		B2964C1E1837176C006FAEC4 /* DebugViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DebugViewController.m; sourceTree = "<group>"; };
 		B2964C20183718B8006FAEC4 /* Unity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Unity.h; sourceTree = "<group>"; };
 		B2964C21183718B8006FAEC4 /* Unity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Unity.m; sourceTree = "<group>"; };
 		B2964C23183719AD006FAEC4 /* 分段控件背景.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "分段控件背景.png"; path = "Images/分段控件背景.png"; sourceTree = "<group>"; };
 		B2964C24183719AD006FAEC4 /* 分段控件阴影.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "分段控件阴影.png"; path = "Images/分段控件阴影.png"; sourceTree = "<group>"; };
-		B2964C2718371D2C006FAEC4 /* TodayViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = TodayViewController.storyboard; path = ../TodayViewController.storyboard; sourceTree = "<group>"; };
 		B2964C29183724A9006FAEC4 /* DebugViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DebugViewController.storyboard; sourceTree = "<group>"; };
 		B2964C2C18373006006FAEC4 /* LunarCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LunarCalendar.h; sourceTree = "<group>"; };
 		B2964C2D18373006006FAEC4 /* LunarCalendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LunarCalendar.m; sourceTree = "<group>"; };
@@ -171,6 +180,8 @@
 		B22D6A3918370F210047FF58 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				B2593EA7183BB32A00E312E0 /* micro_msg.jpg */,
+				B2593E9B183BA67400E312E0 /* my_course_list.png */,
 				B2964C23183719AD006FAEC4 /* 分段控件背景.png */,
 				B2964C24183719AD006FAEC4 /* 分段控件阴影.png */,
 				B22D6A3F183711940047FF58 /* Icon_120x120.png */,
@@ -197,6 +208,9 @@
 		B22D6A3B18370F790047FF58 /* Source Files */ = {
 			isa = PBXGroup;
 			children = (
+				B2593EA2183BB02C00E312E0 /* UserViewController.h */,
+				B2593EA3183BB02C00E312E0 /* UserViewController.m */,
+				B2593EA4183BB02C00E312E0 /* UserViewController.xib */,
 				B2964C20183718B8006FAEC4 /* Unity.h */,
 				B2964C21183718B8006FAEC4 /* Unity.m */,
 				B2FD9BC4182D06A5003EAD08 /* AppDelegate.h */,
@@ -215,8 +229,8 @@
 		B22D6A3C18370FA30047FF58 /* Resource Files */ = {
 			isa = PBXGroup;
 			children = (
+				B2593EA0183BB00000E312E0 /* TodayViewController.storyboard */,
 				B2964C29183724A9006FAEC4 /* DebugViewController.storyboard */,
-				B2964C2718371D2C006FAEC4 /* TodayViewController.storyboard */,
 				B2FD9BC7182D06A5003EAD08 /* Main_iPhone.storyboard */,
 				B2FD9BCA182D06A5003EAD08 /* Main_iPad.storyboard */,
 				B22D6A3918370F210047FF58 /* Images */,
@@ -237,8 +251,8 @@
 		B2593E97183BA46600E312E0 /* MRZoomScrollView */ = {
 			isa = PBXGroup;
 			children = (
-				B2593E98183BA46600E312E0 /* MRZoomScrollView.h */,
-				B2593E99183BA46600E312E0 /* MRZoomScrollView.m */,
+				B2593E9D183BA78300E312E0 /* MRZoomScrollView.h */,
+				B2593E9E183BA78300E312E0 /* MRZoomScrollView.m */,
 			);
 			path = MRZoomScrollView;
 			sourceTree = "<group>";
@@ -335,13 +349,13 @@
 		B2FD9BBB182D06A5003EAD08 /* ccPDA */ = {
 			isa = PBXGroup;
 			children = (
-				B22D6A3C18370FA30047FF58 /* Resource Files */,
-				B22D6A3B18370F790047FF58 /* Source Files */,
-				B22D6A3A18370F3F0047FF58 /* 第三方模块 */,
 				B2FD9BD0182D06A5003EAD08 /* Images.xcassets */,
-				B2FD9BBC182D06A5003EAD08 /* Supporting Files */,
 				B2F58B62182A737700CD8F7A /* IphoneContact.h */,
 				B2F58B63182A737700CD8F7A /* IphoneContact.m */,
+				B22D6A3C18370FA30047FF58 /* Resource Files */,
+				B22D6A3B18370F790047FF58 /* Source Files */,
+				B2FD9BBC182D06A5003EAD08 /* Supporting Files */,
+				B22D6A3A18370F3F0047FF58 /* 第三方模块 */,
 			);
 			path = ccPDA;
 			sourceTree = "<group>";
@@ -452,15 +466,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				B22D6A44183711940047FF58 /* Icon@2x.png in Resources */,
+				B2593E9C183BA67400E312E0 /* my_course_list.png in Resources */,
 				B2F58B73182A9E8E00CD8F7A /* ChangeLogUnzip in Resources */,
 				B2FD9BCC182D06A5003EAD08 /* Main_iPad.storyboard in Resources */,
 				B2FD9BD1182D06A5003EAD08 /* Images.xcassets in Resources */,
 				B22D6A43183711940047FF58 /* Icon.png in Resources */,
 				B2964C2A183724A9006FAEC4 /* DebugViewController.storyboard in Resources */,
+				B2593EA6183BB02C00E312E0 /* UserViewController.xib in Resources */,
+				B2593EA8183BB32A00E312E0 /* micro_msg.jpg in Resources */,
 				B2FD9BC9182D06A5003EAD08 /* Main_iPhone.storyboard in Resources */,
 				B22D6A42183711940047FF58 /* Icon_120x120.png in Resources */,
 				B2964C25183719AD006FAEC4 /* 分段控件背景.png in Resources */,
-				B2964C2818371D2C006FAEC4 /* TodayViewController.storyboard in Resources */,
+				B2593EA1183BB00000E312E0 /* TodayViewController.storyboard in Resources */,
 				B2FD9BC0182D06A5003EAD08 /* InfoPlist.strings in Resources */,
 				B2964C26183719AD006FAEC4 /* 分段控件阴影.png in Resources */,
 			);
@@ -481,6 +498,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2593EA5183BB02C00E312E0 /* UserViewController.m in Sources */,
 				B2FD9BCF182D06A5003EAD08 /* ViewController.m in Sources */,
 				B2F58B59182A6F1000CD8F7A /* FMDatabasePool.m in Sources */,
 				B22D6A50183715A90047FF58 /* CCSegmentedControl.m in Sources */,
@@ -488,7 +506,7 @@
 				B2F58B78182A9E8E00CD8F7A /* ZipArchive.mm in Sources */,
 				B2FD9BC6182D06A5003EAD08 /* AppDelegate.m in Sources */,
 				B2F58B64182A737700CD8F7A /* IphoneContact.m in Sources */,
-				B2593E9A183BA46600E312E0 /* MRZoomScrollView.m in Sources */,
+				B2593E9F183BA78300E312E0 /* MRZoomScrollView.m in Sources */,
 				B2F58B74182A9E8E00CD8F7A /* ioapi.c in Sources */,
 				B2F58B75182A9E8E00CD8F7A /* mztools.c in Sources */,
 				B2F58B76182A9E8E00CD8F7A /* unzip.c in Sources */,
